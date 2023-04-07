@@ -1,0 +1,432 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Kenia';
+  src: url('kenia.woff2') format('woff2'),
+       url('kenia.woff') format('woff');
+}
+
+
+
+/* --- NAVBAR ---*/
+
+.navbar-brand img {
+  max-height: 100px;
+}
+
+.navbar {
+  background-color: #2E2449;
+}
+
+.navbar-dark .navbar-toggler {
+  border: none;
+  color: #FFC800
+}
+
+.navbar-toggler {
+  color: #FFC800;
+}
+
+.nav-item {
+  font-family: 'Kenia', sans-serif;
+  color: #FFC800;
+}
+
+.navbar-nav {
+  margin: auto;
+  background-color: #FFC800;
+}
+
+.navbar-nav .nav-item {
+  text-align: right;
+  padding-right: 50px;
+  font-size: 50px;
+  color: #2E2449;
+}
+
+.nav-link {
+  color: #2E2449;
+}
+
+
+
+/* --- HOME PAGE ---*/
+
+.header-home {
+  background-color: #2e2449;
+}
+
+.header-home h1 {
+  color: #FFC800;
+  text-align: center;
+  font-family: 'Kenia', sans-serif;
+  font-size: 50px;
+  padding: 20px;
+}
+
+
+
+/* --- WELCOME --- */
+
+.main {
+  background-color: #1E1C3F;
+  padding: 25px; 
+}
+
+.welcome .container h2, p {
+  color: white;
+  text-align: center;
+}
+
+.welcome .container h2 {
+  color: white;
+  text-align: center;
+  font-family: 'Kenia', sans-serif;
+  font-size: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.welcome .container p {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 5px 25px;
+  margin: 20px;
+  background-color: #ffc800;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  font-family: 'Kenia', sans-serif;
+  text-transform: lowercase;
+  font-size: 27px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.2); 
+  color: #000000;
+  text-decoration: none;
+  background-color: #FFC800;
+}
+
+
+
+/* -- SERVICES -- */
+
+.box {
+  background-color: #ffffff;
+  border: 5px solid #000000;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.box img {
+  max-width: 20%;
+
+}
+
+.box h3 {
+  font-size: 24px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.box p {
+  font-size: 16px;
+  line-height: 1.2;
+  font-size: 13px;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  padding: 11px;
+
+}
+
+
+
+/* -- FOOTER -- */
+
+footer {
+  background-color: #1E1C3F;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 5px;
+  background-color: #ffc800;
+  margin: 0 10%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+footer .container {
+  background-color: #1E1C3F; 
+  padding: 25px;
+}
+
+footer a {
+  color: #ffffff; 
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+}
+
+footer .page-links {
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-links a {
+  margin-left: 20px;
+}
+
+.social-links img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 25px;
+  margin-top: -70px;
+  padding-bottom: -30px;
+  
+}
+
+
+
+/* ---//// ABOUT PAGE ////--- */
+
+.main {
+  background-color: #1E1C3F;
+  padding: 25px; 
+}
+
+.about img {
+  display: block;
+  margin: 10px auto 40px auto;
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+
+}
+
+.about .container h2, p {
+  color: white;
+  text-align: center;
+}
+
+.about .container h2 {
+  color: #FFC800;
+  text-align: center;
+  font-family: 'Kenia', sans-serif;
+  font-size: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.about .container p {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 3px 20px;
+  margin: 20px;
+  background-color: #ffc800;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  font-family: 'Kenia', sans-serif;
+  text-transform: lowercase;
+  font-size: 27px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.2); 
+  color: #000000;
+  text-decoration: none;
+  background-color: #FFC800;
+}
+
+
+
+
+/* ---//// CONTACT PAGE ////--- */
+
+/* --- HEADER --- */ 
+
+.contact {
+  background-color: #2e2449;
+}
+
+.contact h1 {
+  color: #FFC800;
+  text-align: center;
+  font-family: 'Kenia', sans-serif;
+  font-size: 50px;
+  padding: 20px;
+}
+
+/* --- LINKS --- */
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-links img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.contact-main {
+  background-color: #1E1C3F;
+}
+
+.contact-main h2, p {
+  color: white;
+  text-align: center;
+}
+
+.contact-main h2 {
+  color: white;
+  text-align: center;
+  font-family: 'Kenia', sans-serif;
+  font-size: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  
+}
+
+.contact-main p {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10px;
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+.col-md-6{
+  background-color: #1E1C3F;
+}
+
+.col-md-6 li a{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-link {
+  padding-bottom: 15px;
+  padding-left: 35px
+  
+}
+
+
+
+
+
+
+/* ---//// MEDIA QUERY ////--- */
+
+@media (max-width: 767px) {
+  .copyright {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
