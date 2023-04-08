@@ -150,7 +150,7 @@ table {
   padding: 5px 25px;
   margin: 20px;
   background-color: #ffc800;
-  color: #000000;
+  color: #1d1d1f;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 25px;
@@ -162,7 +162,7 @@ table {
 
 .btn-primary:hover {
   transform: scale(1.2); 
-  color: #000000;
+  color: #1d1d1f;
   text-decoration: none;
   background-color: #FFC800;
 }
@@ -172,8 +172,8 @@ table {
 /* -- SERVICES -- */
 
 .box {
-  background-color: #ffffff;
-  border: 5px solid #000000;
+  background-color: #f5f5f7;
+  border: 5px solid #000000; 
   border-radius: 20px;
   text-align: center;
   margin-top: 10px;
@@ -183,28 +183,25 @@ table {
 
 .box img {
   max-width: 20%;
-
 }
 
 .box h3 {
   font-size: 24px;
   margin-top: 10px;
   font-size: 14px;
-  color: #000000;
+  color: #1d1d1f;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-align: center;
-
 }
 
 .box p {
   font-size: 16px;
   line-height: 1.2;
   font-size: 13px;
-  color: #000000;
+  color: #1d1d1f;
   font-family: 'Montserrat', sans-serif;
   padding: 11px;
-
 }
 
 
@@ -213,7 +210,7 @@ table {
 
 footer {
   background-color: #1E1C3F;
-  color: #ffffff;
+  color: #f5f5f7;
   text-align: center;
   padding: 20px 0;
   position: relative;
@@ -237,7 +234,7 @@ footer .container {
 }
 
 footer a {
-  color: #ffffff; 
+  color: #f5f5f7; 
   font-family: 'Montserrat', sans-serif;
   text-align: left;
 }
@@ -318,7 +315,7 @@ footer .page-links {
   padding: 3px 20px;
   margin: 20px;
   background-color: #ffc800;
-  color: #000000;
+  color: #1d1d1f;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 25px;
@@ -330,7 +327,7 @@ footer .page-links {
 
 .btn-primary:hover {
   transform: scale(1.2); 
-  color: #000000;
+  color: #1d1d1f;
   text-decoration: none;
   background-color: #FFC800;
 }
@@ -340,7 +337,7 @@ footer .page-links {
 
 /* ---//// CONTACT PAGE ////--- */
 
-/* --- HEADER --- */ 
+/* --- header --- */ 
 
 .contact {
   background-color: #2e2449;
@@ -354,7 +351,7 @@ footer .page-links {
   padding: 20px;
 }
 
-/* --- LINKS --- */
+/* --- links --- */
 
 .contact-links {
   display: flex;
@@ -375,12 +372,12 @@ footer .page-links {
 }
 
 .contact-main h2, p {
-  color: white;
+  color: #f5f5f7;
   text-align: center;
 }
 
 .contact-main h2 {
-  color: white;
+  color: #f5f5f7;
   text-align: center;
   font-family: 'Kenia', sans-serif;
   font-size: 50px;
@@ -411,18 +408,207 @@ footer .page-links {
   
 }
 
+/*--- form ---*/
 
+.form {
+  background-color: #1E1C3F;
+}
 
+.contact-form {
+  width: 80%;
+  margin: 0 auto;
+}
 
+.form label {
+  color: #f5f5f7;
+  font-family: 'Kenia', sans-serif;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.form button {
+  padding: 0px 30px;
+}
 
 
 /* ---//// MEDIA QUERY ////--- */
+
+/* mobile exceptions */
 
 @media (max-width: 767px) {
   .copyright {
     display: none;
   }
+
+  .navbar-brand2 img {
+    display: none;
+  }
+
+  .graphic h3, .graphic p, .webdev h3, .webdev p, .cms h3, .cms p, .branding h3, .branding p {
+    display: none;
+  }
+
 }
+
+/* ---//// TABLET VERSION ////--- */
+
+@media only screen and (min-width: 768px) {
+  
+
+  /* logo change */
+
+  .navbar-brand img {
+    display: none;
+  }
+
+  .navbar-brand2 img {
+    width: 250px;
+    margin-top: 20px;
+    margin-left: -10px;
+  }
+
+    /* Change background color and add borders to nav-items */
+  
+    
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2E2449;
+      }
+  
+  .navbar-nav .nav-item {
+    display: inline-block;
+    padding: 0px 15px;
+    margin: 5px;
+    background-color: #1E1C3F;
+    color: #1d1d1f !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #f5f5f7;
+    border-radius: 10px;
+    font-family: 'Kenia', sans-serif;
+    text-transform: lowercase;
+    font-size: 20px;
+  }
+
+
+
+
+  /* --- HOME PAGE --- */ 
+
+
+/* hide header */
+.header-home {
+  display: none;
+}
+
+
+/* Change  h2 color */
+.welcome .container h2 {
+  color: #ffc800;
+}
+
+
+/* Make  p narrower */
+.welcome .container p {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+
+/* button */
+.btn-primary {
+  display: inline-block;
+  padding: 5px 30px;
+  margin: -10px;
+}
+
+
+/* service boxes */
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+.box h2, .box p {
+  margin: 0;
+}
+
+.box h3, .box p {
+  display: none;
+}
+
+
+ .webdev h3, .webdev p, .branding h3, .branding p {
+  font-size: 24px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #f5f5f7;
+  font-family: 'Montserrat', sans-serif;
+  text-align: right;
+}
+
+
+.graphic h3, .graphic p, .cms h3, .cms p {
+  font-size: 24px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #f5f5f7;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+}
+
+.webdev h3, .branding h3, .graphic h3, .cms h3 {
+  font-weight: bold;
+}
+
+
+.graphic-div, .webdev-div, .cms-div, .branding-div {
+  display: flex;
+}
+
+.graphic-box, .webdev-box, .cms-box, .branding-box {
+  width: 100%;
+  height: 200px; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.graphic-box img, .webdev-box img, .cms-box img, .branding-box img {
+  width: 200%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+} /*  tablet query bracket, don't delete */
 
 
 
