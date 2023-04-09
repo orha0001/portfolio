@@ -454,13 +454,26 @@ footer .page-links {
     display: none;
   }
 
+  .tablet-contact h2 {
+    display: none;
+  }
+
+  .about-links {
+    display: none;
+  }
+
   
-}
+} /*  mobile query bracket, don't delete */
+
+/* ---//// MOBILE VERSION FINISHED ////--- */
 
 /* ---//// TABLET VERSION ////--- */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   
+.container {
+  width: 100%;
+}
 
 /* logo change */
 
@@ -505,7 +518,7 @@ footer .page-links {
 
 
 
-  /* --- HOME PAGE --- */ 
+  /* ==== TABLET HOME PAGE ==== */ 
 
 
 /* hide header */
@@ -687,7 +700,7 @@ footer::before {
 
 
 
-/* --- ABOUT PAGE --- */
+/* ==== TABLET ABOUT PAGE ==== */
 
 .about img {
   display: block;
@@ -737,44 +750,68 @@ footer::before {
   padding-bottom: 15px;
   }
 
+
+
+/* ====  TABLET CONTACT PAGE ==== */
+  
+.contact .container h1 {
+  display: none;
+}
+
+.tablet-contact h2 {
+  color: #FFC800;
+  padding: 40px;
+}
+
+.contact-form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form {
+  margin-bottom: -1px;
+}
+
+.form button {
+  margin-bottom: 30px;
+  padding: 0px 15px;
+  font-size: 20px;
+  }
   
 
+.form-link {
+  display: none;
+}
 
+.contact-icons {
+  display: flex;
+}
 
+.contact-p {
+  margin-top: 80px;
+}
 
+.contact-p p {
+  font-size: 15px;
+  width: 300px;
+}
 
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+ 
 } /*  tablet query bracket, don't delete */
 
+/* ---//// TABLET VERSION FINISHED ////--- */
+
+/* ---//// DEKSTOP VERSION ////--- */
+
+@media only screen and (min-width: 1024px) {
+  
+  
 
 
+
+
+
+}/*  desktop query bracket, don't delete */
 
 
 
