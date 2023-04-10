@@ -1155,15 +1155,34 @@ margin-bottom: 50px;
 
 /* ==== DESKTOP CONTACT PAGE ==== */
 
+/*header*/
 
+.contact .container h1 {
+  display: none;
+}
 
+.tablet-contact h2 {
+font-size: 70px;
+padding-top: 120px;
+}
 
+/*content*/
 
+.contact-p p {
+  font-size: 15px;
+  width: 500px;
+  padding-left: 120px;
+}
 
+/* form */
 
+.form {
+  padding-bottom: 50px;
+}
 
-
-
+.list-unstyled {
+  padding-left: 35px;
+}
 
 
 } /* REMINDER! desktop query bracket, don't delete it (must be yellow) */
