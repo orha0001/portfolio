@@ -81,7 +81,6 @@ table {
 
 .navbar-nav {
   margin: auto;
-  background-color: #FFC800;
 }
 
 .navbar-nav .nav-item {
@@ -365,9 +364,6 @@ footer .page-links {
   margin-bottom: 40px;
 }
 
-.contact-main {
-  background-color: #1E1C3F;
-}
 
 .contact-main h2, p {
   color: #f5f5f7;
@@ -391,9 +387,6 @@ footer .page-links {
   padding-bottom: 30px;
 }
 
-.col-md-6{
-  background-color: #1E1C3F;
-}
 
 .col-md-6 li a{
   color: white;
@@ -408,9 +401,6 @@ footer .page-links {
 
 /*--- form ---*/
 
-.form {
-  background-color: #1E1C3F;
-}
 
 .contact-form {
   width: 80%;
@@ -462,6 +452,11 @@ footer .page-links {
     display: none;
   }
 
+  .main {
+    background-image: url(../img/mobile-bg.png);
+    background-size: cover;
+  }
+
   
 } /*  mobile query bracket, don't delete */
 
@@ -469,10 +464,15 @@ footer .page-links {
 
 /* ---//// TABLET VERSION ////--- */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   
 .container {
   width: 100%;
+}
+
+.main {
+  background-image: url(../img/tablet-bg.png);
+  background-size: cover;
 }
 
 /* logo change */
@@ -563,7 +563,6 @@ footer .page-links {
   margin-bottom: 10px;
   width: 160px;
   height: 100px;
-  
 }
 
 .tab-desktop-box img {
@@ -801,17 +800,303 @@ footer::before {
 
 /* ---//// TABLET VERSION FINISHED ////--- */
 
+
+
+
+
+
 /* ---//// DEKSTOP VERSION ////--- */
+
+
 
 @media only screen and (min-width: 1024px) {
   
+.container {
+  width: 1200px;
+}
+
+.desktop-background {
+  width: 1225px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -90px;
+  background-image: url(../img/desktop-bg.png);
+  background-size: cover;
+}
+
+
+
+  /* logo change */
+
+.navbar-brand img {
+  display: none;
+}
+
+.navbar-brand2 img {
+  width: 250px;
+  margin-top: 20px;
+  margin-left: -10px;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand2 img:hover {
+  transform: scale(1.1); 
+}
+
+.about-links {
+  display: none;
+}
+
+
+/* Change background color and add borders to nav-items */
+
   
+.navbar-nav {
+  display: flex;
+  justify-content: right;
+  background-color: #2E2449;
+  width: 100%;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  padding: 0px 15px;
+  margin: 5px;
+  background-color: #1E1C3F;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #f5f5f7;
+  border-radius: 10px;
+  font-family: 'Kenia', sans-serif;
+  text-transform: lowercase;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item:hover {
+  transform: scale(1.1); 
+}
+
+
+
+
+/* ==== DESKTOP HOME PAGE ==== */
+
+/* hide header */
+.header-home {
+  display: none;
+}
+
+.welcome {
+  padding-top: 120px;
+}
+/* Change  h2 size */
+.welcome .container h2 {
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+/* Make  p narrower */
+.welcome .container p {
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 20px;
+}
+
+/* button */
+.btn-primary {
+  display: inline-block;
+  padding: 5px 40px;
+  margin-top: -20px;
+}
+
+.btn-primary:hover {
+  transform: scale(1.2); 
+  color: #1d1d1f;
+  text-decoration: none;
+  background-color: #f5f5f7;
+  border: 1px solid #FFC800;
+}
+
+/* service boxes */
+
+.mobile-services {
+  display: none;
+}
+  
+.tab-desktop.box {
+  background-color: #f5f5f7;
+  border: 5px solid #000000; 
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 180px;
+  height: 120px;
+}
+
+.tab-desktop-box img {
+  max-width: 20%;
+}
+
+
+.tab-desktop-services {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  width: 100%;
+  grid-template-areas:
+    "a b"
+    "c d"
+}
+
+.tab-desktop-services :nth-child(1) {grid-area: a}
+.tab-desktop-services :nth-child(2) {grid-area: b}
+.tab-desktop-services :nth-child(3) {grid-area: c}
+.tab-desktop-services :nth-child(4) {grid-area: d}
+
+.tab-desktop-services h3 {
+  font-size: 16px;
+  color: #f5f5f7;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.tab-desktop-services p {
+  line-height: 1.2;
+  font-size: 14px;
+  color: #f5f5f7;
+  font-family: 'Montserrat', sans-serif;
+  padding: 11px;
+}
+
+.tab-desktop-services img {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 160px;
+  margin: auto auto;
+  margin-bottom: 20px;
+  background-color: #DFDFDF;
+  border: 4px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 10px 40px;
+} 
+
+
+.tab-desktop-graphic, .tab-desktop-cms, .tab-desktop-webdev, .tab-desktop-branding {
+  padding-bottom: 30px;
+}
+
+.tab-desktop-graphic, .tab-desktop-cms  {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tab-desktop-webdev, .tab-desktop-branding {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.tab-desktop-graphic h3, .tab-desktop-cms  h3 {
+  text-align: left;
+  margin-left: 10px; 
+}
+
+.tab-desktop-webdev h3, .tab-desktop-branding  h3 {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.tab-desktop-graphic p, .tab-desktop-cms  p {
+  text-align: left;
+  width: 350px;
+}
+
+.tab-desktop-webdev p, .tab-desktop-branding  p {
+  text-align: right;
+  width: 350px;
+}
+
+
+
+
+/* -- DESKTOP FOOTER -- */
+
+footer {
+  display: flex;
+}
+
+footer .container .row {
+  width: 1200px;
+}
+
+footer::before {
+  content: "";
+  width: 1230px;
+  margin-left: 340px;
+  height: 4px;
+  background-color: #ffc800;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.page-links {
+  display: flex;
+  font-size: 15px;
+}
+
+.page-links li {
+  margin-right: 20px;
+}
+
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social-links a {
+  margin-left: 20px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin-right: 5px;
+}
+
+.copyright {
+  color: #f5f5f7; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  padding-left: 40px;
+  margin-left: 400px;
+}
+
+
+
+
+/* ==== DESKTOP ABOUT PAGE ==== */
 
 
 
 
 
-}/*  desktop query bracket, don't delete */
+
+
+
+
+
+
+
+
+
+
+} /* REMINDER! desktop query bracket, don't delete it (must be yellow) */
 
 
 
