@@ -458,7 +458,7 @@ footer .page-links {
   }
 
   
-} /*  mobile query bracket, don't delete */
+} /*  REMINDER! mobile query bracket, don't delete it (must be yellow) */
 
 /* ---//// MOBILE VERSION FINISHED ////--- */
 
@@ -796,7 +796,7 @@ footer::before {
 }
 
  
-} /*  tablet query bracket, don't delete */
+} /*  REMINDER! tablet query bracket, don't delete it (must be yellow) */
 
 /* ---//// TABLET VERSION FINISHED ////--- */
 
@@ -890,6 +890,7 @@ footer::before {
 .welcome {
   padding-top: 120px;
 }
+
 /* Change  h2 size */
 .welcome .container h2 {
   font-size: 65px;
@@ -1082,8 +1083,77 @@ footer::before {
 
 /* ==== DESKTOP ABOUT PAGE ==== */
 
+.about img {
+  display: block;
+  margin: 10px auto 40px auto;
+  max-width: 70%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.about .container .mobile-about h2 {
+  display: none;
+}
+
+.mobile-about {
+  display: flex;
+}
+
+.btn-primary {
+  padding: 1px 10px;
+  margin: auto;
+  border-radius: 15px;
+  font-size: 25px;
+}
+
+.about h2 {
+margin-bottom: 50px;
+}
 
 
+/* boxes */
+
+.about {
+  padding-top: 100px;
+}
+
+.about-links {
+  display: flex;
+  gap: 100px;
+}
+
+.about-box {
+  background-color: #f5f5f7;
+  border: 5px solid #000000; 
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 140px;
+}
+
+.about-box img {
+  width: 110px;
+  height: 130px;
+  padding-bottom: 15px;
+}
+
+.desktop-background .button-container .btn-primary {
+  padding: 1px 10px;
+  margin-top: -20px;
+  border-radius: 20px;
+  font-size: 35px;
+}
+
+.mobile-about p {
+  width: 50%;
+  margin-top: 50px;
+}
+
+
+
+/* ==== DESKTOP CONTACT PAGE ==== */
 
 
 
