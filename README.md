@@ -4,6 +4,8 @@ My final project portfolio for MTM6201 - Web Dev II
 
 I started designing my website with Adobe XD. Once I completed my website mockup, I began coding it. 
 
+Basic Syntax
+These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
 
 Element	Markdown Syntax
 Heading	# H1
