@@ -1,4 +1,4 @@
-# My final project portfolio for MTM6201 - Web Dev II
+# My final portfolio assignment - MTM6201 Web Dev II
 
 I started designing my website with Adobe XD. Once I completed my website mockup, I began coding it. As challenges, I was not the best at bootstrap and also had to re-watch the class recordings and some other videos from internet. I tried to adapt my XD mock-up as perfect as possible. This is what I have now.
 
