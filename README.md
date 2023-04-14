@@ -8,7 +8,8 @@ Basic Syntax
 These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
 
 Element	Markdown Syntax
-Heading	# H1
+Heading	
+# H1
 ## H2
 ### H3
 Bold	**bold text**
