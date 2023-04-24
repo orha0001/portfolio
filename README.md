@@ -2,50 +2,6 @@
 
 I started designing my website with Adobe XD. Once I completed my website mockup, I began coding it. As challenges, I was not the best at bootstrap and also had to re-watch the class recordings and some other videos from internet. I tried to adapt my XD mock-up as perfect as possible. This is what I have now. I followed the requirements step by step and validated the code. It shhould be good to go now.
 
-Basic Syntax
-These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
-
-## Element Markdown Syntax
-
-Heading	
-# H1
-## H2
-### H3
-
-Bold **bold text**
-
-Italic *italicized text*
-
-Blockquote > blockquote
-
-Ordered List	
-1. First item
-2. Second item
-3. Third item
-
-Unordered List	
-- First item
-- Second item
-- Third item
-
-Code	`code`
-
-Horizontal Rule	---
-
-Link	[title](https://www.example.com)
-
-Image	![alt text](image.jpg)
-
-Fenced Code Block	```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-
-Definition List	term
-: definition
-
 - - - -
 
 ## Bootstrap 5
